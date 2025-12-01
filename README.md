@@ -1,1 +1,6 @@
-# colab
+Machile Learning Project 
+
+In this project, a dataset is uploaded and explored to understand what information it contains—especially the target column Age, whose distribution is visualized to see how balanced the classes are. The data is then split into training and testing sets. Since the Naive Bayes model used here works best with text, each row of features is converted into a single string, and a TF-IDF Vectorizer turns these strings into numerical features the model can understand. With this processed data, a Multinomial Naive Bayes classifier is trained to predict the age category of each entry.
+
+After training, the model’s accuracy is calculated to see how well it performs, and a confusion matrix is displayed to show where the model predicts correctly and where it makes mistakes. If the age label has only two classes, the code also generates an ROC curve to measure how well the model separates the two categories. Several visualizations—such as the class distribution plot, confusion matrix heatmap, and ROC curve—help make the results easier to interpret. The check_spam() function is included but doesn’t apply to this dataset, since the model is built for structured data rather than actual text messages.
+
